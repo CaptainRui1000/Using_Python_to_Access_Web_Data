@@ -12,6 +12,8 @@ ctx.check_hostname = False
 ctx.verify_mode = ssl.CERT_NONE
 
 url = input('Enter - ')
+if len(url) < 1:
+    url = "http://py4e-data.dr-chuck.net/known_by_Tubagus.html"
 count = input('Enter count: ')
 position = input('Enter position: ')
 for i in range(int(count) + 1):
